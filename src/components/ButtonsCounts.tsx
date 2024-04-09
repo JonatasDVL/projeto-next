@@ -8,7 +8,7 @@ export default function ButtonsCounts(props: PropsButtonsCounts) {
   const { addClassName, children, onClick } = props;
 
   return (
-    <button className={`text-2xl text-white font-bold w-12 h-12  rounded-full ${addClassName}`} onClick={onClick}>
+    <button className={`text-2xl text-gray-200 font-bold w-24 h-24  rounded-full hover:text-zinc-900  transform hover:scale-105 duration-200 ${addClassName}`} onClick={onClick}>
       {children}
     </button>
   );
