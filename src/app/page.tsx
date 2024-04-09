@@ -1,3 +1,4 @@
+import Titulo from '@/components/Title';
 import Container from '../components/Container'
 import LinkButton from '../components/LinkButton';
 
@@ -10,16 +11,38 @@ export default function Home() {
       {
         "nome": "Contador",
         "url": "contador"
+      },
+      {
+        "nome": "teste1",
+        "url": "teste1"
+      },
+      {
+        "nome": "teste2",
+        "url": "teste2"
+      },
+      {
+        "nome": "teste3",
+        "url": "teste3"
+      },
+      {
+        "nome": "teste2",
+        "url": "teste2"
+      },
+      {
+        "nome": "teste3",
+        "url": "teste3"
       }
     ]
     return (
-      <Container styles="bg-zinc-900">
-        <h1 className="font-bold text-4xl mb-5 text-red-500 hover:text-gray-100 transform hover:scale-105 duration-200">Projetos</h1>
-        <div className="flex justify-start flex-wrap w-1/2 gap-5 px-4 py-2 border-2 border-zinc-500 rounded-md">
+      <Container addClassName="bg-zinc-900">
+        <Titulo>Projetos</Titulo>
+        <div className="flex justify-start flex-wrap w-1/2 gap-5 px-5 py-5 border-2 border-zinc-500 rounded-md">
           {dataPages.map((page, index) => (
-            <LinkButton key={index} nomePage={page.nome} urlPage={page.url}/>
+            <LinkButton key={index} nomePage={page.nome} urlPage={page.url} addClassName='flex-1'/>
           ))}
         </div>
       </Container>
   );
 }
+
+// deixar melhor aquele quadro com os buttons
