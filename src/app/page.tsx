@@ -2,7 +2,7 @@ import Titulo from '@/components/Title';
 import Container from '../components/Container'
 import LinkButton from '../components/LinkButton';
 
-export default function Home() {
+export default function PageHome() {
     const dataPages = [
       {
         "nome": "Perfil",

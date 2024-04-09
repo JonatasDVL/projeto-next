@@ -6,7 +6,7 @@ import Titulo from "@/components/Title";
 import { useState } from "react";
 import ButtonsCounts from "../../components/ButtonsCounts";
 
-export default function pageContador() {
+export default function PageContador() {
   const [valor, setValor] = useState(0);
 
   return (

@@ -3,7 +3,7 @@ import Container from "../../components/Container";
 import LinkButton from "../../components/LinkButton";
 import Titulo from "@/components/Title";
 
-export default function pagePerfil(){
+export default function PagePerfil(){
   return(
     <Container addClassName="bg-zinc-900">
       <Titulo>Perfil</Titulo>
