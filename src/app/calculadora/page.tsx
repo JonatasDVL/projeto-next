@@ -54,6 +54,9 @@ export default function PageCalculadora() {
       <Square addClassName='justify-end gap-5 text-2xl'>{valor === "" ? 0 : valor}</Square>
       <KeyBoardCalculadora onClick={handleClick} />
       <LinkButton nomePage="Voltar" urlPage="/" />
+      <p className='mt-6 text-sm text-white'>Projeto Incompleto</p>
+
     </Container>
+    
   );
 };
