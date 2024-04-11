@@ -13,12 +13,12 @@ export default function PageHome() {
         "url": "contador"
       },
       {
-        "nome": "teste1",
-        "url": "teste1"
+        "nome": "Calculadora",
+        "url": "calculadora"
       },
       {
-        "nome": "teste2",
-        "url": "teste2"
+        "nome": "Jogo da Velha",
+        "url": "jogo-da-velha"
       },
       {
         "nome": "teste3",
@@ -35,7 +35,7 @@ export default function PageHome() {
     ]
     return (
       <Container addClassName="bg-zinc-900">
-        <Titulo>Projetos</Titulo>
+        <Titulo addClassName='mb-5'>Projetos</Titulo>
         <div className="flex justify-start flex-wrap w-1/2 gap-5 px-5 py-5 border-2 border-zinc-500 rounded-md">
           {dataPages.map((page, index) => (
             <LinkButton key={index} nomePage={page.nome} urlPage={page.url} addClassName='flex-1'/>

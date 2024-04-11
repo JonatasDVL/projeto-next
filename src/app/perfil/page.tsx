@@ -6,7 +6,7 @@ import Titulo from "@/components/Title";
 export default function PagePerfil(){
   return(
     <Container addClassName="bg-zinc-900">
-      <Titulo>Perfil</Titulo>
+      <Titulo addClassName="mb-5">Perfil</Titulo>
       <LinkButton nomePage="Voltar" urlPage="/"/>
     </Container>
   )
