@@ -2,9 +2,9 @@
 import Titulo from '@/components/Title';
 import Container from '@/components/Container'
 import LinkButton from '@/components/LinkButton';
-import Square from '@/components/Square';
+import Square from '@/components/calculadora/SquareCalculadora';
 import { useState } from 'react';
-import KeyBoardCalculadora from '@/components/KeyBoardCalculadora';
+import KeyBoardCalculadora from '@/components/calculadora/KeyBoardCalculadora';
 
 export default function PageCalculadora() {
   const [valor, setValor] = useState("0");
@@ -32,13 +32,6 @@ export default function PageCalculadora() {
       let valorTemp = valor.replaceAll('+', '#').replaceAll('-', '#').replaceAll('*', '#').replaceAll('/', '#')
       const arrayDeNumeros = valorTemp.split("#")
       const ultimoValor = arrayDeNumeros[arrayDeNumeros.length - 1]
-      
-      console.log(value === "0" && (ultimoValor != "0" || ultimoValor.includes(".")));
-      console.log(value === "0");
-      console.log(ultimoValor)
-      console.log(arrayDeNumeros)
-      console.log(ultimoValor !== "0");
-      console.log(ultimoValor.includes("."));
       
       if (valor === "0" && !operadores.includes(value) && value != "." && value != "/100") {
         setValor(value);

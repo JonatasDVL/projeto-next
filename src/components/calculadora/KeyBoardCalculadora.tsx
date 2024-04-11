@@ -1,4 +1,4 @@
-import Square from '@/components/Square';
+import Square from '@/components/calculadora/SquareCalculadora';
 import BackspaceOutlinedIcon from '@mui/icons-material/BackspaceOutlined';
 import SwapHorizOutlinedIcon from '@mui/icons-material/SwapHorizOutlined';
 import ButtonCalculadora from './ButtonCalculadora';
@@ -8,8 +8,8 @@ interface PropsKeyBoardCalculadora{
 }
 
 export default function KeyBoardCalculadora(props: PropsKeyBoardCalculadora) {
-  const handleClick = (valor: string) => { // Definindo a função de clique
-    props.onClick(valor, ''); // Passando o valor do botão para a função onClick
+  const handleClick = (valor: string) => { 
+    props.onClick(valor, ''); 
   };
   const botoesCalculadora = [
     {

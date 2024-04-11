@@ -21,8 +21,8 @@ export default function PageHome() {
         "url": "jogo-da-velha"
       },
       {
-        "nome": "teste3",
-        "url": "teste3"
+        "nome": "Relógio",
+        "url": "relogio"
       },
       {
         "nome": "teste2",
