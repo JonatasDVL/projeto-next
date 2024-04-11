@@ -29,9 +29,17 @@ export default function PageCalculadora() {
       const operadores = ["+", "-", "/", "*"]
       const numeros = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
       const ultimo = valor.substr(valor.length - 1)
-      const arrayDeNumeros = valor.split(/(?=[+-/*])/)
+      let valorTemp = valor.replaceAll('+', '#').replaceAll('-', '#').replaceAll('*', '#').replaceAll('/', '#')
+      const arrayDeNumeros = valorTemp.split("#")
       const ultimoValor = arrayDeNumeros[arrayDeNumeros.length - 1]
-
+      
+      console.log(value === "0" && (ultimoValor != "0" || ultimoValor.includes(".")));
+      console.log(value === "0");
+      console.log(ultimoValor)
+      console.log(arrayDeNumeros)
+      console.log(ultimoValor !== "0");
+      console.log(ultimoValor.includes("."));
+      
       if (valor === "0" && !operadores.includes(value) && value != "." && value != "/100") {
         setValor(value);
       } else if ((operadores.includes(value) && !operadores.includes(ultimo)) || (value === "/100" && !operadores.includes(ultimo)) || (numeros.includes(value)) || (value === "0" && (ultimoValor != "0" || ultimoValor.includes("."))) || (value === "." && !ultimoValor.includes(".") && !operadores.includes(ultimo))) {
